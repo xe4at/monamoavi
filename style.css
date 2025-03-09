@@ -341,6 +341,9 @@ header.sticky {
   transition: all 0.45s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .s-icons i {
@@ -359,7 +362,7 @@ header.sticky {
   color: var(--second-color);
   font-size: 1rem;
   line-height: 1.8;
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 
 .read {
