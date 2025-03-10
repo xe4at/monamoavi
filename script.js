@@ -79,12 +79,19 @@ const translations = {
     portfolio: "Portfolio",
     contact: "Contact",
     hello: "Hello, I'm",
-    role: "Videographer & Content Creator",
+    role: "Professional Videographer & Content Creator",
     description:
       "Professional videographer and content creator with a passion for storytelling through visual media.",
     aboutTitle: "About Me",
     aboutDesc:
-      "I am a professional videographer and content creator with over 5 years of experience. My expertise includes professional event videography, video editing, social media content creation, and commercial production.",
+      "With over 5 years of experience in professional videography and content creation. Specializing in:",
+    skill1: "Professional Event Videography",
+    skill2: "Advanced Video Editing",
+    skill3: "Social Media Content Creation",
+    skill4: "Commercial Video Production",
+    skill5: "Professional Photography",
+    aboutFooter:
+      "Using state-of-the-art equipment and modern techniques to deliver high-quality content that effectively conveys your message.",
     servicesTitle: "My Services",
     servicesDesc: "What I Excel At",
     portfolioTitle: "Latest Projects",
@@ -145,12 +152,19 @@ const translations = {
     contact: "تماس",
     hello: "سلام",
     im: "من",
-    role: "فیلمبردار و تولیدکننده محتوا",
+    role: "فیلمبردار و تولیدکننده محتوای حرفه‌ای",
     description:
       "با بیش از ۵ سال تجربه در فیلمبرداری، تدوین و تولید محتوای دیجیتال. متخصص در تولید محتوای حرفه‌ای و جذاب برای کسب‌وکارها و برندها.",
     aboutTitle: "درباره من",
     aboutDesc:
-      "من یک فیلمبردار و تولیدکننده محتوای حرفه‌ای با بیش از ۵ سال تجربه هستم. تخصص‌های من شامل:\n• فیلمبرداری حرفه‌ای مراسم و رویدادها\n• تدوین ویدیو با نرم‌افزارهای پیشرفته\n• تولید محتوای جذاب برای شبکه‌های اجتماعی\n• تولید ویدیوهای تبلیغاتی و تجاری\n• عکاسی صنعتی و تبلیغاتی\n\nبا استفاده از تجهیزات حرفه‌ای و تکنیک‌های مدرن، کیفیت برتر را در تمام پروژه‌ها تضمین می‌کنم.\nهدف من خلق محتوایی است که نه تنها زیبا باشد، بلکه پیام شما را به مخاطبان به شکلی موثر منتقل کند.",
+      "با بیش از ۵ سال تجربه در زمینه فیلمبرداری و تولید محتوای حرفه‌ای. تخصص‌های من:",
+    skill1: "فیلمبرداری حرفه‌ای مراسم‌ها",
+    skill2: "تدوین پیشرفته ویدیو",
+    skill3: "تولید محتوای شبکه‌های اجتماعی",
+    skill4: "ساخت ویدیوهای تبلیغاتی",
+    skill5: "عکاسی حرفه‌ای",
+    aboutFooter:
+      "با استفاده از تجهیزات مدرن و تکنیک‌های به‌روز، محتوایی با کیفیت برتر تولید می‌کنم که پیام شما را به بهترین شکل منتقل می‌کند.",
     servicesTitle: "خدمات من",
     servicesDesc: "تخصص‌های من",
     portfolioTitle: "آخرین پروژه‌ها",
