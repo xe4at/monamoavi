@@ -2,10 +2,252 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Vazirmatn", sans-serif;
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
+}
+
+/* Persian Font */
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* RTL Improvements */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+  font-family: "Vazirmatn", "Poppins", sans-serif;
+}
+
+[dir="rtl"] .navlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+  margin: 0;
+}
+
+[dir="rtl"] .navlist a {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+[dir="rtl"] .home {
+  justify-content: flex-end;
+}
+
+[dir="rtl"] .home-text {
+  text-align: right;
+  align-items: flex-start;
+  width: 100%;
+}
+
+[dir="rtl"] .slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .one {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+[dir="rtl"] .about {
+  direction: rtl;
+}
+
+[dir="rtl"] .about-text {
+  text-align: right;
+}
+
+[dir="rtl"] .services-content {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .box {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .portfolio .main-text {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .contact {
+  direction: rtl;
+}
+
+[dir="rtl"] .contact-text {
+  text-align: right;
+}
+
+[dir="rtl"] .contact-form {
+  text-align: right;
+}
+
+[dir="rtl"] .contact-form input,
+[dir="rtl"] .contact-form textarea {
+  text-align: right;
+  font-family: "Vazirmatn", "Poppins", sans-serif;
+  direction: rtl;
+}
+
+[dir="rtl"] .lists {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .language-switcher {
+  left: auto;
+  right: 20px;
+}
+
+[dir="rtl"] .logo {
+  margin: 0;
+  order: 1;
+}
+
+[dir="rtl"] #menu-icon {
+  margin: 0;
+  order: 3;
+}
+
+[dir="rtl"] .navlist {
+  order: 2;
+}
+
+[dir="rtl"] .button {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+[dir="rtl"] .btn2 {
+  margin-right: 35px;
+  margin-left: 0;
+  flex-direction: row;
+}
+
+[dir="rtl"] .btn2 span i {
+  margin-left: 15px;
+  margin-right: 0;
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .s-icons {
+  text-align: right;
+}
+
+[dir="rtl"] .layer {
+  text-align: center;
+}
+
+/* Spacing improvements for Persian text */
+[dir="rtl"] h1, 
+[dir="rtl"] h2, 
+[dir="rtl"] h3, 
+[dir="rtl"] h4, 
+[dir="rtl"] p {
+  line-height: 1.8;
+  letter-spacing: normal;
+}
+
+[dir="rtl"] .box p {
+  line-height: 2;
+}
+
+[dir="rtl"] .contact-form input,
+[dir="rtl"] .contact-form textarea {
+  padding: 14px 20px;
+}
+
+[dir="rtl"] .main-text {
+  text-align: center;
+}
+
+[dir="rtl"] .main-text h2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+[dir="rtl"] .main-text p {
+  text-align: center;
+}
+
+[dir="rtl"] .main-text h2 span {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+[dir="rtl"] .portfolio-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .end {
+  direction: rtl;
+}
+
+[dir="rtl"] .last-text {
+  text-align: right;
+}
+
+/* Mobile menu improvements for RTL */
+@media (max-width: 820px) {
+  [dir="rtl"] .navlist {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #20232a;
+    text-align: right;
+    padding: 10px 20px;
+    align-items: flex-start;
+  }
+  
+  [dir="rtl"] .navlist a {
+    margin: 10px 0;
+    font-size: 18px;
+    width: 100%;
+    text-align: right;
+  }
+  
+  [dir="rtl"] .navlist.open {
+    top: 100%;
+  }
+
+  [dir="rtl"] #menu-icon {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  
+  [dir="rtl"] .button {
+    justify-content: flex-start;
+  }
 }
 
 :root {
@@ -188,11 +430,15 @@ section {
 
 .home-text .social-icons {
   display: flex;
+  flex-direction: row;
   gap: 15px;
-  margin: 15px 0;
+  margin: 25px 0;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .home-text .social-icons a {
+  pointer-events: auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -204,13 +450,11 @@ section {
   font-size: 20px;
   transition: all 0.45s ease;
   box-shadow: var(--box-shadow);
-  pointer-events: none;  /* غیرفعال کردن موقت لینک‌ها */
 }
 
 .home-text .social-icons a:hover {
   transform: translateY(-3px);
   background: var(--gradient-accent);
-  color: var(--text-color);
 }
 
 .button {
@@ -543,35 +787,55 @@ header.sticky {
 }
 
 .lists li a {
-  display: block;
-  color: var(--second-color);
-  font-size: 14px;
-  transition: all 0.45s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .lists li a:hover {
-  color: var(--text-color);
-  transform: translateX(5px);
+  transform: translateX(-5px);
 }
 
-.contact-icons i {
-  height: 45px;
-  width: 45px;
-  background: var(--main-color);
-  color: var(--bg-color);
-  font-size: 22px;
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: 25px 0;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.contact-icons a {
+  pointer-events: auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  background: var(--gradient-main);
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
   transition: all 0.45s ease;
-  pointer-events: none;  /* غیرفعال کردن موقت لینک‌ها */
+  box-shadow: var(--box-shadow);
+}
+
+.contact-icons a:hover {
+  transform: translateY(-3px);
+  background: var(--gradient-accent);
+}
+
+.contact-icons i {
+  margin: 0;
+  height: auto;
+  width: auto;
+  background: none;
+  border-radius: 0;
+  color: white;
 }
 
 .contact-icons i:hover {
-  background: var(--accent-color);
-  color: var(--bg-color);
+  background: none;
 }
 
 .contact-form form {
@@ -821,8 +1085,9 @@ form textarea {
     display: flex;
     flex-direction: column;
     background: #20232a;
-    text-align: left;
-    transition: all 0.45s ease;
+    text-align: right;
+    padding: 10px 20px;
+    align-items: flex-start;
   }
 
   .navlist a {
@@ -935,4 +1200,33 @@ form textarea {
   background: var(--text-color);
   color: var(--main-color);
   box-shadow: 0 5px 15px rgba(77, 159, 255, 0.3);
+}
+
+/* Language Switcher Button */
+.language-switcher {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  background: var(--main-color);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-switcher:hover {
+  background: var(--accent-color);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.4);
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mona Moavi | Videographer & Content Creator</title>
+    <title>مونا معاوی | فیلمبردار و تولیدکننده محتوا</title>
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -22,11 +22,11 @@
     <header class="sticky">
       <a href="#" class="logo">mo<span>n</span>a.</a>
       <ul class="navlist">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="active" data-translate="home">Home</a></li>
+        <li><a href="#about" data-translate="about">About</a></li>
+        <li><a href="#services" data-translate="services">Services</a></li>
+        <li><a href="#portfolio" data-translate="portfolio">Portfolio</a></li>
+        <li><a href="#contact" data-translate="contact">Contact</a></li>
       </ul>
       <div class="bx bx-menu" id="menu-icon"></div>
     </header>
@@ -35,18 +35,37 @@
     <section class="home" id="home">
       <div class="home-text">
         <div class="slide">
-          <span class="one">Hello</span>
-          <span class="two">I'm</span>
+          <span class="one" data-translate="hello">سلام</span>
+          <span class="two" data-translate="im">من</span>
         </div>
-        <h1>Mona Moavi</h1>
-        <h3>Videographer & <span>Content Creator</span></h3>
-        <p>
-          With over 5 years of experience in videography, editing, and digital content creation.
-          Specializing in creating engaging and professional content for businesses and brands.
+        <h1>منا معاوی</h1>
+        <h3><span data-translate="role">فیلمبردار و تولیدکننده محتوا</span></h3>
+        <p data-translate="description">
+          با بیش از ۵ سال تجربه در فیلمبرداری، تدوین و تولید محتوای دیجیتال.
+          متخصص در تولید محتوای حرفه‌ای و جذاب برای کسب‌وکارها و برندها.
         </p>
+        <div class="social-icons">
+          <a href="https://instagram.com/monamoavi" target="_blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://linkedin.com/in/monamoavi" target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://t.me/monamoavi" target="_blank"
+            ><i class="bx bxl-telegram"></i
+          ></a>
+          <a href="https://twitter.com/monamoavi" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+        </div>
         <div class="button">
-          <a href="#contact" class="btn">Contact Me</a>
-          <a href="#portfolio" class="btn2"><span><i class="bx bx-play"></i></span>View My Work</a>
+          <a href="#contact" class="btn" data-translate="contactMe"
+            >Contact Me</a
+          >
+          <a href="#portfolio" class="btn2"
+            ><span><i class="bx bx-play"></i></span
+            ><span data-translate="viewWork">View My Work</span></a
+          >
         </div>
       </div>
     </section>
@@ -57,58 +76,64 @@
         <img src="./img/back2.png" alt="About Me" />
       </div>
       <div class="about-text">
-        <h2>About <span>Me</span></h2>
-        <h4>Professional Videographer & Digital Content Creator</h4>
-        <p>
-          I am a professional videographer and content creator with over 5 years of experience. My expertise includes:
-          <br>• Professional event and ceremony videography
-          <br>• Video editing with cutting-edge software
-          <br>• Engaging social media content creation
-          <br>• Commercial and promotional video production
-          <br>• Industrial and advertising photography
-          <br><br>
-          Using professional equipment and modern techniques, I ensure top quality in all projects.
-          My goal is to create content that not only looks beautiful but effectively conveys your message to your audience.
+        <h2 data-translate="aboutTitle">About <span>Me</span></h2>
+        <h4 data-translate="role">
+          Professional Videographer & Digital Content Creator
+        </h4>
+        <p data-translate="aboutDesc">
+          I am a professional videographer and content creator with over 5 years
+          of experience. My expertise includes:
+          <br />• Professional event and ceremony videography <br />• Video
+          editing with cutting-edge software <br />• Engaging social media
+          content creation <br />• Commercial and promotional video production
+          <br />• Industrial and advertising photography <br /><br />
+          Using professional equipment and modern techniques, I ensure top
+          quality in all projects. My goal is to create content that not only
+          looks beautiful but effectively conveys your message to your audience.
         </p>
-        <a href="#services" class="btn">View Services</a>
+        <a href="#services" class="btn" data-translate="viewServices"
+          >View Services</a
+        >
       </div>
     </section>
 
     <!-- Service Section Design -->
     <section class="services" id="services">
       <div class="main-text">
-        <p>What I Excel At</p>
-        <h2><span>My</span> Services</h2>
+        <p data-translate="servicesDesc">What I Excel At</p>
+        <h2 data-translate="servicesTitle"><span>My</span> Services</h2>
       </div>
       <div class="services-content">
         <div class="box">
           <div class="s-icons">
             <i class="bx bx-camera-movie"></i>
           </div>
-          <h3>Professional Videography</h3>
-          <p>
-            4K quality videography for events, ceremonies, and products.
-            Using professional equipment to capture your best moments with cinematic quality.
+          <h3 data-translate="videoService">Professional Videography</h3>
+          <p data-translate="videoServiceDesc">
+            4K quality videography for events, ceremonies, and products. Using
+            professional equipment to capture your best moments with cinematic
+            quality.
           </p>
         </div>
         <div class="box">
           <div class="s-icons">
             <i class="bx bx-video"></i>
           </div>
-          <h3>Video Editing</h3>
-          <p>
-            Professional video editing with advanced software.
-            Color grading, effects, and creative editing to create engaging content.
+          <h3 data-translate="editingService">Video Editing</h3>
+          <p data-translate="editingServiceDesc">
+            Professional video editing with advanced software. Color grading,
+            effects, and creative editing to create engaging content.
           </p>
         </div>
         <div class="box">
           <div class="s-icons">
             <i class="bx bx-broadcast"></i>
           </div>
-          <h3>Content Creation</h3>
-          <p>
-            Creative content creation for social media platforms.
-            Design and production of promotional videos, motion graphics, and digital content.
+          <h3 data-translate="contentService">Content Creation</h3>
+          <p data-translate="contentServiceDesc">
+            Creative content creation for social media platforms. Design and
+            production of promotional videos, motion graphics, and digital
+            content.
           </p>
         </div>
       </div>
@@ -117,16 +142,16 @@
     <!-- Portfolio Section Design -->
     <section class="portfolio" id="portfolio">
       <div class="main-text">
-        <p>Portfolio</p>
-        <h2><span>Latest</span> Projects</h2>
+        <p data-translate="portfolioDesc">Portfolio</p>
+        <h2 data-translate="portfolioTitle"><span>Latest</span> Projects</h2>
       </div>
 
       <div class="portfolio-content">
         <div class="row">
           <img src="./img/1.jpg" alt="Commercial Video" />
           <div class="layer">
-            <h5>Home Appliance Brand Commercial</h5>
-            <p>
+            <h5 data-translate="commercial">Home Appliance Brand Commercial</h5>
+            <p data-translate="commercialDesc">
               Professional commercial video production for new product launches.
               4K videography with creative editing and production.
             </p>
@@ -137,10 +162,10 @@
         <div class="row">
           <img src="./img/1.jpg" alt="Corporate Documentary" />
           <div class="layer">
-            <h5>Corporate Documentary</h5>
-            <p>
-              Story-driven corporate documentary production.
-              Combining interviews, aerial footage, and motion graphics.
+            <h5 data-translate="corporate">Corporate Documentary</h5>
+            <p data-translate="corporateDesc">
+              Story-driven corporate documentary production. Combining
+              interviews, aerial footage, and motion graphics.
             </p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
@@ -149,10 +174,10 @@
         <div class="row">
           <img src="./img/1.jpg" alt="Social Media Content" />
           <div class="layer">
-            <h5>Social Media Content</h5>
-            <p>
-              Engaging content creation for Instagram and YouTube.
-              Short videos, stories, and interactive posts.
+            <h5 data-translate="social">Social Media Content</h5>
+            <p data-translate="socialDesc">
+              Engaging content creation for Instagram and YouTube. Short videos,
+              stories, and interactive posts.
             </p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
@@ -163,24 +188,38 @@
     <!-- Contact Section Design -->
     <section class="contact" id="contact">
       <div class="contact-text">
-        <h2>Contact <span>Me</span></h2>
-        <h4>Let's Discuss Your Project</h4>
-        <p>
-          Available for videography, editing, and content creation projects.
-          Get in touch to discuss your ideas and vision.
+        <h2 data-translate="contactTitle">Contact <span>Me</span></h2>
+        <h4 data-translate="contactDesc">Let's Discuss Your Project</h4>
+        <p data-translate="availableFor">
+          Available for videography, editing, and content creation projects. Get
+          in touch to discuss your ideas and vision.
         </p>
         <div class="lists">
           <li><a href="#">+98 912-000-0000</a></li>
-          <li><a href="#">monamoavi@gmail.com</a></li>
+          <li><a href="mailto:monamoavi@gmail.com">monamoavi@gmail.com</a></li>
+        </div>
+        <div class="contact-icons">
+          <a href="https://instagram.com/monamoavi" target="_blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://linkedin.com/in/monamoavi" target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://t.me/monamoavi" target="_blank"
+            ><i class="bx bxl-telegram"></i
+          ></a>
+          <a href="https://twitter.com/monamoavi" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
         </div>
       </div>
       <div class="contact-form">
         <form id="contactForm">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <input type="text" name="phone" placeholder="Your Phone Number" required />
-          <textarea name="message" cols="35" rows="10" placeholder="Project Details" required></textarea>
-          <button type="submit" class="submit">Send Message</button>
+          <input type="text" name="name" placeholder="نام شما" required>
+          <input type="email" name="email" placeholder="ایمیل شما" required>
+          <input type="tel" name="phone" placeholder="شماره تماس شما">
+          <textarea name="message" placeholder="جزئیات پروژه" required></textarea>
+          <button type="submit" class="submit">ارسال پیام</button>
         </form>
       </div>
     </section>
@@ -188,7 +227,7 @@
     <!-- End Section Design -->
     <section class="end">
       <div class="last-text">
-        <p>Copyright © 2024 All Rights Reserved</p>
+        <p data-translate="copyright">Copyright © 2024 All Rights Reserved</p>
       </div>
       <div class="top">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
@@ -205,7 +244,7 @@
     <div class="loading-overlay">
       <div class="loading-spinner">
         <div class="spinner"></div>
-        <p>Sending Message...</p>
+        <p data-translate="loadingMessage">Sending Message...</p>
       </div>
     </div>
   </body>
