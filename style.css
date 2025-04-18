@@ -406,14 +406,31 @@ section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/back-des.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  overflow: hidden;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.home video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .home-text {
@@ -577,9 +594,9 @@ header.sticky {
 }
 
 .about-img img {
-  max-width: 500px;
-  height: auto;
   width: 100%;
+  height: 400px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -726,7 +743,7 @@ header.sticky {
 
 .portfolio-content .row img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
   display: block;
@@ -1332,4 +1349,129 @@ form textarea {
 
 .about-text .btn {
   margin-top: 15px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.contact-item span {
+  color: var(--text-color);
+  min-width: 100px;
+}
+
+.contact-item a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--main-color);
+  transform: translateX(5px);
+}
+
+.contact-footer {
+  margin-top: 2rem;
+  font-style: italic;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+/* Video Styles */
+.home-video,
+.about-video,
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-video video,
+.about-video video,
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Home Section Video */
+.home-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* About Section Video */
+.about-video {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Portfolio Video */
+.video-container {
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Responsive Video Styles */
+@media (max-width: 768px) {
+  .about-video {
+    height: 300px;
+  }
+  
+  .video-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-video {
+    height: 250px;
+  }
+  
+  .video-container {
+    height: 200px;
+  }
 }
