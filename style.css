@@ -529,57 +529,89 @@ section {
 }
 
 .button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 12px;
+  margin-top: 1.5rem;
 }
 
 .btn {
-  display: inline-block;
-  padding: 12px 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
   background: var(--gradient-main);
-  border-radius: 5px;
-  color: white;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  font-weight: 600;
-  transition: all 0.45s ease;
-  box-shadow: var(--box-shadow);
-  border: none;
+  border-radius: 6px;
+  color: var(--bg-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(155, 123, 111, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.5px;
+}
+
+[dir="rtl"] .btn {
+  letter-spacing: 0;
+  gap: 8px;
+}
+
+[dir="ltr"] .btn {
+  letter-spacing: 0.5px;
+  gap: 6px;
 }
 
 .btn:hover {
-  transform: scale(0.9);
+  transform: translateY(-2px);
   background: var(--gradient-accent);
-  color: var(--text-color);
+  box-shadow: 0 5px 15px rgba(155, 123, 111, 0.3);
+}
+
+.btn i {
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+[dir="rtl"] .btn i {
+  margin-right: 4px;
+}
+
+[dir="ltr"] .btn i {
+  margin-left: 4px;
+}
+
+.btn:hover i {
+  transform: translateX(3px);
 }
 
 .btn2 {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: 600;
+  gap: 8px;
   color: var(--text-color);
-  margin-left: 35px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .btn2 span i {
-  height: 46px;
-  width: 46px;
+  width: 35px;
+  height: 35px;
   background: var(--main-color);
   color: var(--bg-color);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 35px;
-  border-radius: 50%;
-  margin-right: 15px;
-  transition: all 0.45s ease;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(155, 123, 111, 0.2);
 }
 
 .btn2 span i:hover {
-  transform: scale(1.1) translateY(5px);
+  transform: scale(1.1);
+  background: var(--accent-color);
+  box-shadow: 0 5px 15px rgba(155, 123, 111, 0.3);
 }
 
 header.sticky {
