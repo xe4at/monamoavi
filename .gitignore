@@ -1,0 +1,23 @@
+# Media files
+*.mp4
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+
+# Directories
+img/
+videos/
+
+# Environment files
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db 

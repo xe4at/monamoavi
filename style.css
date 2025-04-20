@@ -303,26 +303,28 @@
 }
 
 :root {
-  --bg-color: #faf6f1;  /* پس زمینه اصلی کرم روشن */
-  --second-bg-color: #f5efe6;  /* پس زمینه ثانویه کرم */
-  --text-color: #e0cab9;  /* رنگ متن اصلی - قهوه‌ای تیره */
-  --second-color: #beb2ac;  /* رنگ متن ثانویه - قهوه‌ای متوسط */
-  --main-color: #9b7b6f;  /* قهوه‌ای ملایم */
-  --accent-color: #c4a99d;  /* قهوه‌ای روشن */
-  --soft-pink: #d5b3a7;  /* صورتی قهوه‌ای ملایم */
+  --bg-color: #faf6f1;  /* رنگ پس‌زمینه کرم روشن */
+  --second-bg-color: #f5efe6;  /* رنگ پس‌زمینه ثانویه کرم */
+  --text-color: #e0cab9;  /* رنگ متن قهوه‌ای روشن */
+  --second-color: #beb2ac;  /* رنگ متن ثانویه قهوه‌ای */
+  --main-color: #9b7b6f;  /* رنگ اصلی قهوه‌ای */
+  --accent-color: #c4a99d;  /* رنگ تاکیدی قهوه‌ای روشن */
+  --soft-pink: #d5b3a7;  /* رنگ صورتی نرم */
+  --dark-red: #8b5a4a;  /* رنگ قرمز تیره */
+  --gradient: linear-gradient(45deg, var(--main-color), var(--accent-color));
+  --box-shadow: 0 0 20px rgba(155, 123, 111, 0.2);
   --soft-blue: #b9a199;  /* قهوه‌ای مایل به خاکستری */
   --gradient-main: linear-gradient(135deg, #9b7b6f, #c4a99d, #d5b3a7);  /* گرادینت اصلی قهوه‌ای */
   --gradient-accent: linear-gradient(135deg, #d5b3a7, #b9a199);  /* گرادینت تاکیدی */
   --gradient-bg: linear-gradient(135deg, #faf6f1 0%, #f5efe6 100%);  /* گرادینت پس زمینه کرم */
   --gradient-card: linear-gradient(135deg, rgba(155, 123, 111, 0.1), rgba(196, 169, 157, 0.1));  /* گرادینت کارت‌ها */
-  --box-shadow: 0 8px 32px rgba(155, 123, 111, 0.1);  /* سایه نرم */
   --big-font: 5rem;
   --h2-font: 3rem;
   --p-font: 1.1rem;
 }
 
 body {
-  background: var(--gradient-bg);
+  background: var(--bg-color);
   color: var(--text-color);
 }
 
